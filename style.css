@@ -8,13 +8,14 @@
 h1{
     text-align: center;
     font-size: 2.5rem;
-    color:  rgb(107, 6, 6);
+    color:   #3559E0;
     font-family: 'Kalam', cursive;
 
 
 }
 body{
-    background-color: beige;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,244,1) 100%);
 }
 nav{
     background-color: black;
@@ -25,7 +26,7 @@ nav{
     align-items: center;
     padding: 0 12px;
     font-family: 'Inter', sans-serif;  
-    color: rgb(134, 40, 40);
+    color: #3559E0;
 }
 
 nav ul{
@@ -54,7 +55,7 @@ nav ul{
     align-items: center;
 }
 .box:hover{
-    background-color: rgb(226, 212, 240);
+    background-color: rgb(215, 211, 219);
 }
 .info{
     font-size: 23px;
@@ -116,6 +117,6 @@ nav ul{
     height: 3px;
     width: 0;
     position: absolute;
-    background-color: rgb(107, 6, 6);
+    background-color: #3559E0;
     transition: width 1s ease-in-out;
 }
