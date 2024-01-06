@@ -5,11 +5,13 @@ let turn = "X";
 let isgameover = false;
 
 // Function to change the turn
+
 const changeTurn = () => {
     return turn === "X" ? "0" : "X";
 };
 
 // Function to check the Win
+
 const checkWin = () => {
     let boxtext = document.getElementsByClassName("boxtext");
     let wins = [
@@ -44,6 +46,7 @@ const checkWin = () => {
     });
 
     // Check for a draw
+
     if (draw) {
         let isDraw = Array.from(boxtext).every((box) => box.innerText !== "");
         if (isDraw) {
@@ -55,6 +58,7 @@ const checkWin = () => {
 };
 
 // Game Logic
+
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach((element) => {
     let boxtext = element.querySelector(".boxtext");
@@ -72,6 +76,7 @@ Array.from(boxes).forEach((element) => {
 });
 
 // Add onclick listener to reset button
+
 reset.addEventListener("click", () => {
     let boxtexts = document.querySelectorAll(".boxtext");
     Array.from(boxtexts).forEach((element) => {
